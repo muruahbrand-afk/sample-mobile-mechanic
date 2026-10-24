@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wrenchwise Mobile Mechanics | Car repair at your home or work in Anytown</title>
+<meta name="description" content="Mobile mechanic serving Anytown and nearby. We come to your home or workplace for brakes, batteries, oil changes, diagnostics and more. Call or text for a free quote.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Wrenchwise Mobile Mechanics","telephone":"+1-555-010-0142","areaServed":"Anytown and surrounding area","openingHours":"Mo-Sa 07:00-19:00","description":"Mobile mechanic that repairs cars at your home or workplace."}
+</script>
+<style>
+:root{
+  --asphalt:#1E2326; --asphalt-2:#2B3236; --line:#F2C200; --line-dark:#C79F00;
+  --paper:#FFFFFF; --fog:#ECEFF1; --ink:#1E2326; --muted:#566067;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;font:18px/1.55 Barlow,system-ui,sans-serif;color:var(--ink);background:var(--paper)}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;line-height:1.02;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--line);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+
+.sample{background:var(--line);color:var(--asphalt);font-size:14px;font-weight:600;text-align:center;padding:6px 12px}
+
+header.top{background:var(--asphalt);color:#fff}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0}
+.brand{font:800 26px/1 "Barlow Condensed","Arial Narrow",Impact,sans-serif;letter-spacing:.01em;text-decoration:none}
+.brand span{color:var(--line)}
+.call-sm{background:var(--line);color:var(--asphalt);font-weight:700;text-decoration:none;padding:10px 16px;border-radius:6px;white-space:nowrap}
+.call-sm:hover{background:#ffd633}
+
+.hero{background:var(--asphalt);color:#fff;padding:36px 0 56px;position:relative}
+.hero h1{font-size:clamp(44px,10vw,92px);font-weight:800;max-width:11em}
+.hero p.lead{font-size:20px;max-width:30em;margin:18px 0 28px;color:#D5DBDF}
+.phone{display:inline-block;font:800 clamp(40px,9vw,76px)/1 "Barlow Condensed","Arial Narrow",Impact,sans-serif;color:var(--line);text-decoration:none;letter-spacing:.01em}
+.phone:hover{text-decoration:underline;text-underline-offset:6px}
+.hero .sub{margin:8px 0 22px;color:#BFC7CC}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:6px;border:2px solid var(--line);font-size:18px}
+.btn.fill{background:var(--line);color:var(--asphalt)}
+.btn.fill:hover{background:#ffd633}
+.btn.ghost{color:#fff}
+.btn.ghost:hover{background:rgba(242,194,0,.15)}
+.centerline{position:absolute;left:0;right:0;bottom:22px;height:6px;background:repeating-linear-gradient(90deg,var(--line) 0 46px,transparent 46px 86px)}
+
+section{padding:56px 0}
+section.alt{background:var(--fog)}
+h2{font-size:clamp(34px,6vw,52px);font-weight:800;margin-bottom:10px}
+.intro{color:var(--muted);max-width:34em;margin:0 0 28px}
+
+.price-list{list-style:none;margin:0;padding:0;border-top:3px solid var(--asphalt)}
+.price-list li{display:flex;justify-content:space-between;gap:16px;align-items:baseline;padding:16px 0;border-bottom:1px solid #C9D0D4}
+.price-list b{font-weight:600}
+.price-list small{display:block;color:var(--muted);font-size:15px}
+.price-list .amt{font:700 24px/1 "Barlow Condensed","Arial Narrow",Impact,sans-serif;white-space:nowrap}
+.fine{font-size:15px;color:var(--muted);margin-top:14px}
+
+.steps{list-style:none;counter-reset:s;margin:0;padding:0;display:grid;gap:22px}
+.steps li{counter-increment:s;padding-left:64px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-4px;width:46px;height:46px;border-radius:50%;background:var(--asphalt);color:var(--line);font:800 28px/46px "Barlow Condensed","Arial Narrow",Impact,sans-serif;text-align:center}
+.steps h3{font-size:28px;margin-bottom:4px}
+.steps p{margin:0;color:var(--muted)}
+
+.area{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:18px 0 0}
+.area li{border:2px solid var(--asphalt);border-radius:999px;padding:6px 16px;font-weight:600}
+
+.reviews-slot{border:3px dashed #9AA5AB;border-radius:10px;padding:26px;color:var(--muted)}
+.reviews-slot b{color:var(--ink);display:block;font-size:20px;margin-bottom:4px}
+
+details{border-bottom:1px solid #C9D0D4;padding:16px 0}
+details:first-of-type{border-top:3px solid var(--asphalt)}
+summary{cursor:pointer;font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-weight:700;font-size:24px;line-height:1}
+details[open] summary::after{content:"\2212"}
+details p{margin:10px 0 0;color:var(--muted);max-width:40em}
+
+form{display:grid;gap:14px;max-width:560px}
+label{font-weight:600;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px;border:2px solid #9AA5AB;border-radius:6px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--line);border-color:var(--asphalt)}
+form button{font:inherit;font-weight:700;font-size:19px;background:var(--asphalt);color:var(--line);border:0;border-radius:6px;padding:16px;cursor:pointer}
+form button:hover{background:var(--asphalt-2)}
+
+footer{background:var(--asphalt);color:#BFC7CC;padding:34px 0;font-size:16px}
+footer a{color:var(--line)}
+footer .brand{color:#fff;display:inline-block;margin-bottom:8px}
+
+.stick{display:none}
+@media (max-width:640px){
+  .stick{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--asphalt);border-top:3px solid var(--line)}
+  .stick a{text-align:center;padding:14px 8px;font-weight:700;text-decoration:none;color:#fff}
+  .stick a.c{background:var(--line);color:var(--asphalt)}
+  body{padding-bottom:58px}
+  .call-sm{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="sample">Sample design. Business name, prices and details are placeholders.</div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top">Wrench<span>wise</span></a>
+    <a class="call-sm" href="tel:+15550100142">Call (555) 010-0142</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <h1>Car trouble? We come to you.</h1>
+    <p class="lead">A licensed mechanic with a fully equipped van, repairing your car at your home or workplace in Anytown and nearby. No tow truck, no waiting room.</p>
+    <a class="phone" href="tel:+15550100142">(555) 010-0142</a>
+    <p class="sub">Call or text, Monday to Saturday, 7 am to 7 pm</p>
+    <div class="btns">
+      <a class="btn fill" href="tel:+15550100142">Call now</a>
+      <a class="btn ghost" href="sms:+15550100142">Text us</a>
+      <a class="btn ghost" href="#quote">Get a free quote</a>
+    </div>
+  </div>
+  <div class="centerline" aria-hidden="true"></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>What we fix</h2>
+    <p class="intro">Clear starting prices. We confirm the final price with you before any work begins.</p>
+    <ul class="price-list">
+      <li><div><b>Oil and filter change</b><small>Conventional, blend or full synthetic</small></div><span class="amt">from $69</span></li>
+      <li><div><b>Brake pads and rotors</b><small>Squealing, grinding or a soft pedal</small></div><span class="amt">from $189</span></li>
+      <li><div><b>Battery test and replacement</b><small>Car won't start? We'll find out why</small></div><span class="amt">from $49</span></li>
+      <li><div><b>Starter and alternator</b><small>Clicking, dim lights, dead battery warning</small></div><span class="amt">from $229</span></li>
+      <li><div><b>Check-engine light diagnosis</b><small>We scan it and explain the problem in plain words</small></div><span class="amt">from $79</span></li>
+      <li><div><b>A/C check and repair</b><small>Blowing warm air or making noise</small></div><span class="amt">from $99</span></li>
+      <li><div><b>Pre-purchase inspection</b><small>Before you buy a used car</small></div><span class="amt">from $119</span></li>
+    </ul>
+    <p class="fine">Prices are examples and vary by vehicle. Parts are extra on repairs.</p>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><h3>Tell us what's wrong</h3><p>Call, text or fill in the quote form. Give us your car's make, model and the symptoms.</p></li>
+      <li><h3>Get a clear price</h3><p>We give you a price before we start. If we find something else, we ask first.</p></li>
+      <li><h3>We fix it where you are</h3><p>We arrive at the time we agreed. You stay home or at work. You pay when the job is done.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="area">
+  <div class="wrap">
+    <h2>Where we work</h2>
+    <p class="intro">We travel up to 25 miles from the town center. No call-out fee inside the main area.</p>
+    <ul class="area">
+      <li>Anytown</li><li>Northfield</li><li>Riverside</li><li>Oak Hills</li><li>Lakeview</li><li>Maple Heights</li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt" id="reviews">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <div class="reviews-slot"><b>Your real Google reviews go here.</b>We show genuine reviews from your Google profile, with names and dates, so people can trust them.</div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2>Common questions</h2>
+    <details><summary>Do you need a garage or driveway?</summary><p>A flat, safe spot like a driveway, parking space or work lot is enough. We bring our own tools, jacks and lighting.</p></details>
+    <details><summary>Is it cheaper or more expensive than a shop?</summary><p>You skip the tow and the day without a car. Many jobs cost about the same as a shop. We give you a price first, so you can compare.</p></details>
+    <details><summary>What can't be done at your driveway?</summary><p>Jobs that need a lift, such as some transmission and major engine work. We'll tell you straight away and suggest the next step.</p></details>
+    <details><summary>How do I pay?</summary><p>Card, cash or mobile payment, after the work is finished.</p></details>
+  </div>
+</section>
+
+<section class="alt" id="quote">
+  <div class="wrap">
+    <h2>Get a free quote</h2>
+    <p class="intro">Tell us about the car and we'll reply the same day.</p>
+    <form name="quote" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="quote">
+      <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Phone number<input name="phone" type="tel" autocomplete="tel" required></label>
+      <label>Car (year, make, model)<input name="car" placeholder="2016 Toyota Camry" required></label>
+      <label>What's wrong?<textarea name="problem" rows="4" required></textarea></label>
+      <label>Where is the car?<input name="location" placeholder="Town or ZIP code" required></label>
+      <button type="submit">Send my request</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top">Wrenchwise Mobile Mechanics</a>
+    <p>Serving Anytown and nearby<br>Monday to Saturday, 7 am to 7 pm<br><a href="tel:+15550100142">(555) 010-0142</a></p>
+    <p>Add: license number, insurance details and business address here.</p>
+  </div>
+</footer>
+
+<nav class="stick" aria-label="Contact">
+  <a class="c" href="tel:+15550100142">Call now</a>
+  <a href="sms:+15550100142">Text us</a>
+</nav>
+</body>
+</html>
